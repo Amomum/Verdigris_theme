@@ -1,0 +1,8 @@
+{
+	"tokenColors": "./amonokai.tmTheme",
+	"colors": {
+		// editor
+		"editor.rangeHighlightBackground": "#F9CDCD"
+	},
+	"name": "Amonokai"
+}

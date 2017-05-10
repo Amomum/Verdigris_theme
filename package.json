@@ -8,7 +8,7 @@
 			{
 				"label": "amonokai",
 				"uiTheme": "vs",
-				"path": "./themes/amonokai.tmTheme"
+				"path": "./themes/amonokai.json"
 			}
 		]
 	}
