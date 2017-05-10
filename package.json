@@ -1,5 +1,5 @@
 {
-	"name": "theme-amonokai",
+	"name": "theme-verdigris-light",
 	"Category": "Theme",
 	"version": "0.0.1",
 	"publisher": "amomum",
@@ -7,9 +7,9 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "amonokai",
+				"label": "Verdigris Light",
 				"uiTheme": "vs",
-				"path": "./themes/amonokai.json"
+				"path": "./themes/verdigris-light.json"
 			}
 		]
 	}

@@ -7,7 +7,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Amonokai</string>
+	<string>Verdigris Light</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -854,6 +854,6 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
-	<string>theme.light.amonokai</string>
+	<string>theme.light.verdigris</string>
 </dict>
 </plist>
