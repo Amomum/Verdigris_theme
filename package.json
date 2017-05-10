@@ -1,5 +1,6 @@
 {
 	"name": "theme-amonokai",
+	"Category": "Theme",
 	"version": "0.0.1",
 	"publisher": "amomum",
 	"engines": { "vscode": "*" },
