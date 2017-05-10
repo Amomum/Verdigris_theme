@@ -172,6 +172,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Storage modifier</string>
+			<key>scope</key>
+			<string>storage.modifier</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</key>
+				<key>foreground</key>
+				<string>#2D23ED</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Mut modifier</string>
 			<key>scope</key>
 			<string>storage.modifier.mut</string>
@@ -380,6 +393,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Any numeric literal</string>
+			<key>scope</key>
+			<string>constant.numeric</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff8000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Floating point literal</string>
 			<key>scope</key>
 			<string>constant.numeric.float</string>
@@ -419,7 +443,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FF3BA0</string>
+				<string>#019A3E</string>
 			</dict>
 		</dict>
 		<dict>
@@ -430,7 +454,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#99005C</string>
+				<string>#7619CC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -498,7 +522,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#7FE5FF</string>
+				<string>#006078</string>
 			</dict>
 		</dict>
 		<dict>
@@ -529,9 +553,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Miscellaneous operator</string>
+			<string>Just an operator</string>
 			<key>scope</key>
-			<string>keyword.operator.misc</string>
+			<string>keyword.operator</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -597,6 +621,19 @@
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C preprocessor</string>
+			<key>scope</key>
+			<string>meta.preprocessor</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#7f0055</string>
 			</dict>
 		</dict>
 		<dict>
@@ -707,7 +744,7 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#7f0055</string>
+				<string>#210DE5</string>
 			</dict>
 		</dict>
 		<dict>
