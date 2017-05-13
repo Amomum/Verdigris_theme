@@ -1,6 +1,6 @@
 {
 	"name": "theme-verdigris-light",
-	"Category": "Theme",
+	"categories": ["Themes"],
 	"version": "0.0.1",
 	"publisher": "amomum",
 	"engines": { "vscode": "*" },

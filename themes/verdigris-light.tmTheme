@@ -155,8 +155,10 @@
 			<string>keyword.operator.sigil</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>bold</key>
 				<key>foreground</key>
-				<string>#8C26D1</string>
+				<string>#098EFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -166,8 +168,10 @@
 			<string>variable.language</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>bold</key>
 				<key>foreground</key>
-				<string>#1C755D</string>
+				<string>#7f0055</string>
 			</dict>
 		</dict>
 		<dict>
@@ -204,7 +208,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D1AF26</string>
+				<string>#000A9C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -228,7 +232,7 @@
 				<key>fontStyle</key>
 				<string>bold</key>
 				<key>foreground</key>
-				<string>#0070BA</string>
+				<string>#008051</string>
 			</dict>
 		</dict>
 		<dict>
@@ -252,7 +256,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#1F6E65</string>
+				<string>#7f0055</string>
 			</dict>
 		</dict>
 		<dict>
@@ -331,7 +335,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D14826</string>
+				<string>#6A26E8</string>
 			</dict>
 		</dict>
 		<dict>
@@ -353,7 +357,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D1AF26</string>
+				<string>#000A9C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -606,8 +610,10 @@
 			<string>keyword.operator.arithmetic</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>bold</key>
 				<key>foreground</key>
-				<string>#7f0055</string>
+				<string>#098EFF</string>
 			</dict>
 		</dict>
 		<dict>
