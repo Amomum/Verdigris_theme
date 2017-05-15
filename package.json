@@ -1,8 +1,18 @@
 {
 	"name": "theme-verdigris-light",
 	"categories": ["Themes"],
+	
+	"keywords": [
+        "theme",
+        "color-theme",
+        "rust",
+        "light",
+        "verdigris"
+    ],
+	
 	"version": "0.0.1",
 	"publisher": "amomum",
+	"license": "BY-NC-SA",
 	"engines": { "vscode": "*" },
 	"contributes": {
 		"themes": [
