@@ -7,7 +7,7 @@ I'm not sure if it will look any good for any other language though.
 
 ## Preview simple
 
-![Preview Simple](simple_code.png.png)
+![Preview Simple](simple_code.png)
 
 ## Preview complex
 
