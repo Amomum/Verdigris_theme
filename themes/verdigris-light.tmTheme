@@ -28,11 +28,7 @@
 				
 				<key>lineHighlight</key>
 				<string>#00B3FF1F</string>
-
-				<key>rangeHighlight</key>
-				<string>##FF4242</string>
-
-				
+	
 				<key>selection</key>
 				<string>#66F2FF8C</string>
 				
@@ -122,6 +118,8 @@
 			<string>constant.character.escape</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>bold</key>
 				<key>foreground</key>
 				<string>#8C26D1</string>
 			</dict>
@@ -208,7 +206,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000A9C</string>
+				<string>#2D23ED</string>
 			</dict>
 		</dict>
 		<dict>
@@ -502,7 +500,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#AE81FF</string>
+				<string>#7504B5</string>
 			</dict>
 		</dict>
 		<dict>
@@ -515,7 +513,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#FD971F</string>
+				<string>#AB3C11</string>
 			</dict>
 		</dict>
 		<dict>
@@ -822,7 +820,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6E22E</string>
+				<string>#65E22E</string>
 			</dict>
 		</dict>
 		<dict>
