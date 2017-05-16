@@ -1,5 +1,7 @@
 {
 	"name": "theme-verdigris-light",
+	"displayName": "Verdigris light theme",
+	"description": "Light color theme adjusted for rust",
 	"categories": ["Themes"],
 	
 	"keywords": [
