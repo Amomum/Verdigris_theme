@@ -1,0 +1,189 @@
+# Copyright (c) 2014 Alex Crichton
+
+# Permission is hereby granted, free of charge, to any
+# person obtaining a copy of this software and associated
+# documentation files (the "Software"), to deal in the
+# Software without restriction, including without
+# limitation the rights to use, copy, modify, merge,
+# publish, distribute, sublicense, and/or sell copies of
+# the Software, and to permit persons to whom the Software
+# is furnished to do so, subject to the following
+# conditions:
+
+# The above copyright notice and this permission notice
+# shall be included in all copies or substantial portions
+# of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+# ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+# TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+# PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+# SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+# IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
+
+
+[package]
+name = "toml"
+version = "0.5.7"
+authors = ["Alex Crichton <alex@alexcrichton.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["encoding"]
+repository = "https://github.com/alexcrichton/toml-rs"
+homepage = "https://github.com/alexcrichton/toml-rs"
+documentation = "https://docs.rs/toml"
+description = """
+A native Rust encoder and decoder of TOML-formatted files and streams. Provides
+implementations of the standard Serialize/Deserialize traits for TOML data to
+facilitate deserializing and serializing Rust structures.
+"""
+categories = ["config", "encoding", "parser-implementations"]
+edition = "2018"
+
+[workspace]
+members = ['test-suite']
+
+[dependencies]
+serde = "1.0.97"
+indexmap = { version = "1.0", optional = true }
+
+[dev-dependencies]
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[features]
+default = []
+
+# Use indexmap rather than BTreeMap as the map type of toml::Value.
+# This allows data to be read into a Value and written back to a TOML string
+# while preserving the order of map keys in the input.
+preserve_order = ["indexmap"]
+
+#######################################################
+
+# This is a TOML document
+
+title = "TOML Example"
+
+[owner]
+name = "Tom Preston-Werner"
+dob = 1979-05-27T07:32:00-08:00
+
+[database]
+enabled = true
+ports = [ 8001, 8001, 8002 ]
+data = [ ["delta", "phi"], [3.14] ]
+temp_targets = { cpu = 79.5, case = 72.0 }
+
+[servers]
+
+[servers.alpha]
+ip = "10.0.0.1"
+role = "frontend"
+
+
+# integers
+int1 = +99
+int2 = 42
+int3 = 0
+int4 = -17
+
+# hexadecimal with prefix `0x`
+hex1 = 0xDEADBEEF
+hex2 = 0xdeadbeef
+hex3 = 0xdead_beef
+
+# octal with prefix `0o`
+oct1 = 0o01234567
+oct2 = 0o755
+
+# binary with prefix `0b`
+bin1 = 0b11010110
+
+# fractional
+float1 = +1.0
+float2 = 3.1415
+float3 = -0.01
+
+# exponent
+float4 = 5e+22
+float5 = 1e06
+float6 = -2E-2
+
+# both
+float7 = 6.626e-34
+
+# separators
+float8 = 224_617.445_991_228
+
+# infinity
+infinite1 = inf # positive infinity
+infinite2 = +inf # positive infinity
+infinite3 = -inf # negative infinity
+
+# not a number
+not1 = nan
+not2 = +nan
+not3 = -nan 
+
+re = '''\d{2} apps is t[wo]o many'''
+lines = '''
+The first newline is
+trimmed in raw strings.
+All other whitespace
+is preserved.
+'''
+
+#offset datetime
+odt1 = 1979-05-27T07:32:00Z
+odt2 = 1979-05-27T00:32:00-07:00
+odt3 = 1979-05-27T00:32:00.999999-07:00
+
+# local datetime
+ldt1 = 1979-05-27T07:32:00
+ldt2 = 1979-05-27T00:32:00.999999
+
+# local date
+ld1 = 1979-05-27
+
+# local time
+lt1 = 07:32:00
+lt2 = 00:32:00.999999
+
+[[fruit]]
+  name = "apple"
+
+  [fruit.physical]  # subtable
+    color = "red"
+    shape = "round"
+
+[dog."tater.man"]
+type.name = "pug"
+
+integers = [ 1, 2, 3 ]
+colors = [ "red", "yellow", "green" ]
+nested_array_of_int = [ [ 1, 2 ], [3, 4, 5] ]
+nested_mixed_array = [ [ 1, 2 ], ["a", "b", "c"] ]
+string_array = [ "all", 'strings', """are the same""", '''type''' ]
+
+# Mixed-type arrays are allowed
+numbers = [ 0.1, 0.2, 0.5, 1, 2, 5 ]
+contributors = [
+  "Foo Bar <foo@example.com>",
+  { name = "Baz Qux", email = "bazqux@example.com", url = "https://example.com/bazqux" }
+]
+
+quot15 = '''Here are fifteen quotation marks: """""""""""""""'''
+
+# apos15 = '''Here are fifteen apostrophes: ''''''''''''''''''  # INVALID
+apos15 = "Here are fifteen apostrophes: '''''''''''''''"
+
+# 'That,' she said, 'is still pointless.'
+str = ''''That,' she said, 'is still pointless.''''
+
+boolean = true
+another_boolean = false
+
