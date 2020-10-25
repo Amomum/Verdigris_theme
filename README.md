@@ -16,9 +16,24 @@ I tried to make them as close as possible.
 
 ![Preview Complex](complex_code.png)
 
+## TOML preview
+
+![Preview TOML](toml_example.png)
+
 ## Release Note
+
+### 0.0.2
+
+- Added better TOML coloring support
+
 
 ### 0.0.1
 
 - Initial release
+
+## Links:
+
+(here mostly for me not to search for them)
+
+[VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=amomum.theme-verdigris-light)
 
