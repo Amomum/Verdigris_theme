@@ -65,6 +65,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>TOML section name</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name.table.toml</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</key>
+				<key>foreground</key>
+				<string>#4B5CDB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Block documentation comment</string>
 			<key>scope</key>
 			<string>comment.block.documentation</string>
@@ -113,6 +126,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Hash line comment</string>
+			<key>scope</key>
+			<string>comment.line.number-sign</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</key>
+				<key>foreground</key>
+				<string>#00950E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Escape character</string>
 			<key>scope</key>
 			<string>constant.character.escape</string>
@@ -129,6 +155,17 @@
 			<string>Double-quote string literal</string>
 			<key>scope</key>
 			<string>string.quoted.double</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BA2500</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Single-quote string literal (also used for TOML strings)</string>
+			<key>scope</key>
+			<string>string.quoted.single.basic.line</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -711,7 +748,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>			
+				<string>bold</string>
 				<key>foreground</key>
 				<string>#7f0055</string>
 			</dict>
