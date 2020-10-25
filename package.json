@@ -1,36 +1,36 @@
 {
-	"name": "theme-verdigris-light",
-	"displayName": "Verdigris light theme",
-	"description": "Light color theme adjusted for rust",
-	"categories": ["Themes"],
-	
-	"keywords": [
+    "name": "theme-verdigris-light",
+    "displayName": "Verdigris light theme",
+    "description": "Light color theme adjusted for rust",
+    "categories": ["Themes"],
+    
+    "keywords": [
         "theme",
         "color-theme",
         "rust",
         "light",
         "verdigris"
     ],
-	
-	"version": "0.0.2",
-	"publisher": "amomum",
-	"icon": "icon.png",
-	"repository": {
+    
+    "version": "0.0.2",
+    "publisher": "amomum",
+    "icon": "icon.png",
+    "repository": {
         "type": "git",
         "url": "https://github.com/Amomum/Verdigris_theme.git"
     },
     "bugs": {
         "url": "https://github.com/Amomum/Verdigris_theme/issues"
-	},
-	"license": "BY-NC-SA",
-	"engines": { "vscode": "*" },
-	"contributes": {
-		"themes": [
-			{
-				"label": "Verdigris Light",
-				"uiTheme": "vs",
-				"path": "./themes/verdigris-light.json"
-			}
-		]
-	}
+    },
+    "license": "BY-NC-SA",
+    "engines": { "vscode": "*" },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Verdigris Light",
+                "uiTheme": "vs",
+                "path": "./themes/verdigris-light.json"
+            }
+        ]
+    }
 }
