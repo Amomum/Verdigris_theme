@@ -78,6 +78,52 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>TOML double bracket section</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name.table.array.toml</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</key>
+				<key>foreground</key>
+				<string>#4B5CDB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>TOML section bracket</string>
+			<key>scope</key>
+			<string>punctuation.definition.table.toml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4B5CDB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>TOML double bracket section bracket</string>
+			<key>scope</key>
+			<string>punctuation.definition.table.array.toml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4B5CDB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>TOML boolean value</string>
+			<key>scope</key>
+			<string>constant.other.boolean.toml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#8126D1</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Block documentation comment</string>
 			<key>scope</key>
 			<string>comment.block.documentation</string>
@@ -163,9 +209,42 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Single-quote string literal (also used for TOML strings)</string>
+			<string>Single-quote string literal (also TOML double-quited string for some reason)</string>
 			<key>scope</key>
 			<string>string.quoted.single.basic.line</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BA2500</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>TOML single quoted string</string>
+			<key>scope</key>
+			<string>string.quoted.single.literal.line</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BA2500</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>TOML triple double-quoted string block</string>
+			<key>scope</key>
+			<string>string.quoted.triple.basic.block</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BA2500</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>TOML triple single-quoted string block</string>
+			<key>scope</key>
+			<string>string.quoted.triple.literal.block</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
